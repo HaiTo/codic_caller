@@ -1,0 +1,145 @@
+# rubocop yml config example
+# https://github.com/ryshinoz/rubocop_sample
+
+######## Rubocop Config ########
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - vendor/**
+    - db/**/*
+    - config/**
+    - tmp/**
+    - log/**
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Rails/ActionFilter:
+  Enabled: false
+
+Rails/Delegate:
+  Enabled: true
+
+Rails/Validation:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 1000
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/CyclomaticComplexity:
+  Max: 50
+
+Metrics/MethodLength:
+  # Max: 30
+  Enabled: false
+
+Metrics/LineLength:
+  # Max: 180
+  Enabled: false
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessComparison:
+  Enabled: true
+
+Lint/Void:
+  Enabled: true
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/SpaceBeforeBlockBraces:
+  EnforcedStyle: space
+
+Style/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+  SpaceBeforeBlockParameters: false
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: no_braces
+
+Style/CollectionMethods:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/IfUnlessModifier:
+  MaxLineLength: 60
+
+Style/GuardClause:
+  MinBodyLength: 3
+
+RedundantSelf:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Lint/EndAlignment:
+  Enabled: false
+Style/IndentationWidth:
+  Enabled: false
+
+AndOr:
+  Enabled: false
+
+Style/IndentHash:
+  Enabled: false
+
+Style/CaseEquality:
+  Enabled: false
+
+Style/SignalException:
+  EnforcedStyle: only_raise
+
+NumericLiterals:
+  MinDigits: 12
+
+CommentAnnotation:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/EmptyLiteral:
+  Enabled: false
+
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+Style/WhenThen:
+   Enabled: false
+
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
