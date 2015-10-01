@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'codic_caller'
+
+p CodicCaller::Codic.new.translate(ARGV.first)
