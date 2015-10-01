@@ -16,6 +16,13 @@ Or install it yourself as:
 
 ## Usage
 
+need Codic api token. and setting to ENV
+
+```bash|.zshrc
+export CODIC='your_api_token'
+```
+
+
 ```bash
 $ codic t 認証
 ```
