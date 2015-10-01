@@ -1,4 +1,15 @@
 #!/usr/bin/env ruby
 require 'codic_caller'
+require 'thor'
 
-p CodicCaller::Codic.new.translate(ARGV.first)
+class Codic < Thor
+
+  desc '(translate|t) text', 'translation basic pattern using default project'
+  def translate(text)
+    p CodicCaller::Codic.new.translate(text)
+  end
+
+  map 't' => 'translate'
+end
+
+Codic.start(ARGV)
