@@ -9,6 +9,9 @@ module CodicCaller
 
     def initialize
       @token = ENV['CODIC']
+
+      p "please write 'export CODIC=you_access_token' in .*rc" and exit(1) if @token.nil?
+      end
     end
 
     def translate(text, casing: 'lower underscore')
